@@ -1,0 +1,8 @@
+x = (input("¿Desea continuar? S/N")).upper()
+if x == "S":
+    print("Continue disfrutando su navegación")
+else:
+    if x == "N":
+        print("El programa se cerrara")
+    else:
+        print("La respuesta ingresada no corresponde a una opcion de respuesta \n¿Desea continuar? S/N")

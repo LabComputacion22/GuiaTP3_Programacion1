@@ -1,0 +1,9 @@
+C = 1
+SU = 0
+n = int(input("Ingrese hasta que numero desea buscar los impares: "))
+for x in range(1,(n+1),2):
+    SU = (SU + x)
+    print(x)
+print(f"La suma de los valores impares es {SU}")
+
+

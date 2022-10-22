@@ -1,0 +1,54 @@
+cont = 0
+mayor = 0
+menor = 0
+num_ingresados = []
+inicio = "true"
+num = int(input("Ingrese su numero: "))
+while cont < 5:
+    if inicio == "true":
+        mayor = num
+        menor = num
+        inicio = "false"
+        num_ingresados.append(num)
+        print(f"Los numeros ingresados son:\n{num_ingresados}")
+        cont = (cont + 1)
+        print(cont)
+        num = int(input("Ingrese su numero: "))
+    else:
+        if num > mayor:
+            mayor = num
+            num_ingresados.append(num)
+            print(f"Los numeros ingresados son:\n{num_ingresados}")
+            print(f"El numero mayor que se ingreso es {mayor}")
+            print(f"El numero menor que se ingreso es {menor}")
+            cont = (cont + 1)
+            print(cont)
+            num = int(input("Ingrese su numero: "))
+        else:
+            if num < menor:
+                menor = num
+                num_ingresados.append(num)
+                cont = (cont + 1)
+                print(f"Los numeros ingresados son:\n{num_ingresados}")
+                print(f"El numero mayor que se ingreso es {mayor}")
+                print(f"El numero menor que se ingreso es {menor}")
+                print(cont)
+                num = int(input("Ingrese su numero: "))
+            else:
+                if cont == 4:
+                    num_ingresados.append(num)
+                    cont = (cont + 1)
+                    print(f"Los numeros ingresados son:\n{num_ingresados}")
+                    print(f"El numero mayor que se ingreso es {mayor}")
+                    print(f"El numero menor que se ingreso es {menor}")
+                    print(cont)
+                else:
+                    num_ingresados.append(num)
+                    cont = (cont + 1)
+                    num = int(input("Ingrese su numero: "))
+
+print(f"Usted ingreso todos los datos necesarios, los numeros ingresados son:\n{num_ingresados}")
+print(f"El numero mayor que se ingreso es {mayor}")
+print(f"El numero menor que se ingreso es {menor}")
+# print(inicio)
+# print(cont)
